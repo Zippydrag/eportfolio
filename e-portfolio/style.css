@@ -37,7 +37,6 @@ section {
     margin-right: 4%;
 }
 
-/* Wenn der Bildschirm kleiner als 1200px ist */
 @media (max-width: 1200px) {
     .logo {
         width: 25px;
@@ -47,7 +46,6 @@ section {
     }
 }
 
-/* Wenn der Bildschirm kleiner als 992px ist */
 @media (max-width: 992px) {
     .logo {
         width: 20px;
@@ -94,7 +92,6 @@ nav ul li a {
     margin-left: 7%;
 }
 
-/* Wenn der Bildschirm kleiner als 1200px ist */
 @media (max-width: 1200px) {
     nav ul li a {
         font-size: 14px;
@@ -103,7 +100,6 @@ nav ul li a {
     }
 }
 
-/* Wenn der Bildschirm kleiner als 992px ist */
 @media (max-width: 992px) {
     nav ul li a {
         font-size: 12px;
@@ -155,6 +151,29 @@ nav ul li span{
 .start {
     background-color: aqua;
     flex-direction: column;
+}
+
+.hidden {
+  opacity:0;
+}
+
+.console-container {
+  margin-top: 10%;
+  font-size: 150%;
+  color: #000000;
+  z-index: 2;
+  text-align:left;
+  color:black;
+  font-weight: 600;
+  /* background-color: #294fce; */
+}
+
+.console-underscore {
+   display:inline-block;
+  position:relative;
+  top:-0.14em;
+  left:10px;
+  color: #0026ff;
 }
 
 .startimage {
@@ -214,7 +233,6 @@ a {
 .rightside-aboutme {
     display: flex;
     flex-direction: column;
-    /* background-color: rgb(255, 0, 204); */
     padding-left: 1%;
     padding-top: 4%;
     margin-left: 10%;
@@ -279,11 +297,11 @@ a {
 }
 
 .socialmedia {
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 40%;
-    
 }
 
 .smicon {
@@ -293,7 +311,7 @@ a {
 .contact-form {
     width: 90vb;
     height: 80vh;
-    margin-top: 4%;
+    margin-top: 3%;
     padding: 2em;
     padding-bottom: 0;
     border: 1px solid #ccc;
@@ -301,7 +319,7 @@ a {
     background-color: white;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Schatten hinzufügen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -329,14 +347,13 @@ input, textarea {
 
 textarea {
     vertical-align: top;
-    max-height: fit-content;
     resize: vertical;
+    height: 31vh;
     max-height: 31vh;
 }
 
 .message-container {
     height: 60vh;
-    /* background-color: #ad7b7b; */
 }
 
 .button-container {
@@ -344,7 +361,6 @@ textarea {
     display: flex;
     justify-content: center;
     margin-top: 1em;
-    /* background-color: #FBC821; */
 }
 
 .button {
