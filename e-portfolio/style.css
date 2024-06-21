@@ -280,8 +280,10 @@ a {
 
 .socialmedia {
     display: flex;
-    flex-direction: row;
-    justify-content: baseline;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 40%;
+    
 }
 
 .smicon {
@@ -290,11 +292,12 @@ a {
 
 .contact-form {
     width: 90vb;
-    height: 70vh;
+    height: 80vh;
     margin-top: 4%;
     padding: 2em;
+    padding-bottom: 0;
     border: 1px solid #ccc;
-    border-radius: 7px;
+    border-radius: 10px;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -318,7 +321,7 @@ input, textarea {
     width: 100%;
     box-sizing: border-box;
     padding: .5em;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 .inputname {
     width: 45%;
@@ -328,7 +331,12 @@ textarea {
     vertical-align: top;
     max-height: fit-content;
     resize: vertical;
-    max-height: 35vh;
+    max-height: 31vh;
+}
+
+.message-container {
+    height: 60vh;
+    /* background-color: #ad7b7b; */
 }
 
 .button-container {
@@ -336,6 +344,7 @@ textarea {
     display: flex;
     justify-content: center;
     margin-top: 1em;
+    /* background-color: #FBC821; */
 }
 
 .button {
@@ -347,6 +356,7 @@ textarea {
     font-size: 1em;
     cursor: pointer;
     font-weight:500;
+    margin-bottom: 3.5%;
 }
 .button:hover {
     background: #294fce;
