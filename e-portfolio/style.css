@@ -349,11 +349,11 @@ a {
 
   .skills-title h1 {
     font-size: 24px;
-    margin-top: 5px;
+    margin-top: 20px;
   }
 
   .skills span {
-    font-size: 150%;
+    font-size: 300%;
   }
 
   .skill-name {
