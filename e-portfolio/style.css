@@ -361,7 +361,7 @@ a {
   }
 
   .skill-bar {
-    height: 8px;
+   width: 90%;
   }
 
   .skill-per::before {
