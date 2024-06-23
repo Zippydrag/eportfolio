@@ -214,19 +214,23 @@ a {
 }
 
 /* Aboutme Section*/
-.aboutme {
-  background-color: rgb(89, 89, 255);
-}
-
 .leftside-aboutme {
   padding-top: 4%;
   padding-left: 3%;
+  order: -1;
 }
 
 .portrait {
   width: 135%;
+  min-width: 200px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
 }
 
+.portrait-text h1 h2 {
+  position: absolute;
+  margin: 0%;
+  background-color: #0026ff;
+}
 .rightside-aboutme {
   display: flex;
   flex-direction: column;
@@ -241,59 +245,69 @@ a {
 
 .bottom-line-aboutme {
   border-bottom: 2px solid #0026ff;
+  margin-top: 3%;
   margin-bottom: 1.5%;
 }
 
 .skills {
-  display: flex;
-  background-color: #fbc821;
   margin-top: 0%;
+}
+
+.skills-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-title h1 {
+  margin-top: 28px;
 }
 
 .skills span {
   margin-top: 10px;
-  margin-right: 1%;
-  font-size: 300%;
+  margin-right: 2%;
+  font-size: 400%;
 }
 
 .skill-bars {
   width: 100%;
-  max-width: 600px;
-  padding: 0 20px;
+  max-width: 1000px;
 }
 
 .skill-name {
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color: black;
   text-transform: uppercase;
-  margin: 20px 0;
+  margin: -10px 0;
+  margin-top: 30px;
 }
 
 .skill-bar {
   height: 14px;
-  background-color: #000000;
+  background-color: #f1f1f1;
   border-radius: 3px;
 }
 
 .skill-per {
   height: 14px;
-  background-color: #fb2121;
+  background-color: #fbc821;
   border-radius: 3px;
   position: relative;
   animation: fillBars 2.5s 1;
+  font-weight: 1000;
 }
 
 .skill-per::before {
   content: attr(per);
   position: absolute;
   padding: 4px 6px;
-  background-color: white;
+  background-color: #f1f1f1;
   border-radius: 4px;
   font-size: 12px;
   top: -35px;
   right: 0;
   transform: translateX(50%);
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .skill-per::after {
@@ -303,9 +317,11 @@ a {
   height: 10px;
   background-color: white;
   top: -20px;
+  z-index: -1;
   right: 0;
   transform: translateX(50%) rotate(45deg);
   border-radius: 2px;
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fillBars {
