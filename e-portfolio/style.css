@@ -236,7 +236,7 @@ a {
   margin: 0%;
   background-color: #0026ff;
 }
-/* Basis-Stile */
+
 .rightside-aboutme {
   display: flex;
   flex-direction: column;
@@ -301,6 +301,7 @@ a {
   position: relative;
   animation: fillBars 2.5s 1;
   font-weight: 1000;
+  transition: width 2.5s ease-in-out;
 }
 
 .skill-per::before {
@@ -429,23 +430,22 @@ a {
 }
 
 @media (max-width: 1400px) {
-    .card {
-      width: 230px;
-    }
-  
-    .card img {
-      height: 130px;
-    }
-  
-    .card h2 {
-      font-size: 1rem;
-    }
-  
-    .card p {
-      font-size: 0.9rem;
-    }
+  .card {
+    width: 230px;
   }
 
+  .card img {
+    height: 130px;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
 
 /* Contact Section */
 .email {
